@@ -7,9 +7,9 @@ from jinja2 import TemplateNotFound
 import json
 
 blueprint = Blueprint('social_media', __name__, template_folder='templates')
-@blueprint.route('/')
-def home_page():
-    return render_template("home_page.html")
+@blueprint.route('/mapbox_demo')
+def mapbox_demo():
+    return render_template("mapbox_demo.html")
 
 
 
